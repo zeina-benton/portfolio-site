@@ -1,9 +1,11 @@
 body {
-  background: url('your-background.jpg') no-repeat center center fixed;
+  background: url('images/360_F_370356524_7x9V1bkGksKyTJzskUVbxIv81KVx2yT0.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: white;
 }
+
 
 /* Remove gray background from container */
 .profile-container {
@@ -124,38 +126,21 @@ a:hover {
 
 /* Accordion buttons styled like your boxes under headshot */
 .accordion {
-  background-color: #007bff; /* Blue background */
-  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  color: white; /* text color */
   cursor: pointer;
-  padding: 18px 25px;
+  padding: 15px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-  border-radius: 12px;
-  margin-top: 15px;
+  font-size: 18px;
   transition: background-color 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  margin: 8px 0;
 }
 
-.accordion:hover,
-.accordion.active {
-  background-color: #0056b3; /* Darker blue on hover or active */
-}
-
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease-out;
-  background-color: #f9f9f9;
-  padding: 0 25px;
-  border-radius: 0 0 12px 12px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-  color: #222;
-}
-
-.panel p {
-  margin: 15px 0;
+/* Optional: change color on hover */
+.accordion:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
