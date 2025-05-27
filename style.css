@@ -126,38 +126,30 @@ a:hover {
 
 /* Accordion buttons styled like your boxes under headshot */
 .accordion {
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
-  color: white;
+  background-color: #333;
+  color: #fff;
   cursor: pointer;
   padding: 15px;
   width: 100%;
-  border: none;
   text-align: left;
+  border: none;
   outline: none;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-  margin: 8px 0;
+  transition: 0.4s;
+  font-size: 1.1em;
+  margin-top: 10px;
 }
 
-/* Hover effect */
+.accordion.active,
 .accordion:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #555;
 }
 
-/* Panel is hidden by default */
 .panel {
-  padding: 0 15px;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  background-color: #444;
+  color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  color: white;
-  border-radius: 0 0 5px 5px;
-}
-
-/* When panel is active (opened) */
-.panel.active {
-  max-height: 1000px; /* enough to show content */
-  padding: 15px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+  margin-bottom: 10px;
 }

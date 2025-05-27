@@ -57,27 +57,33 @@
     </div>
     <button class="accordion">Resume</button>
     <div class="panel">
-      <p><a href="CV_2025.pdf" target="_blank" style="color: #00ffff; text-decoration: underline;">Download/View Resume (CV_2025.pdf)</a></p>
+      <p><a href="CV_2025.pdf" target="_blank" style="color: #ffffff; text-decoration: underline;">Download/View Resume (CV_2025.pdf)</a></p>
     </div>
   </div>
 
-  <script>
+<script>
   const accordions = document.querySelectorAll(".accordion");
 
   accordions.forEach(acc => {
     acc.addEventListener("click", () => {
-      // Toggle 'active' class on the button itself
-      acc.classList.toggle("active");
+      // Close all other panels
+      accordions.forEach(other => {
+        if (other !== acc) {
+          other.classList.remove("active");
+          const otherPanel = other.nextElementSibling;
+          otherPanel.style.maxHeight = null;
+          otherPanel.style.padding = "0 15px";
+        }
+      });
 
-      // The next sibling element is the panel div
+      // Toggle current panel
+      acc.classList.toggle("active");
       const panel = acc.nextElementSibling;
 
       if (panel.style.maxHeight) {
-        // Panel is open, close it
         panel.style.maxHeight = null;
         panel.style.padding = "0 15px";
       } else {
-        // Panel is closed, open it
         panel.style.maxHeight = panel.scrollHeight + "px";
         panel.style.padding = "15px";
       }
