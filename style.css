@@ -1,24 +1,17 @@
-/* Page background and font */
 body {
-  background-image: url('images/360_F_370356524_7x9V1bkGksKyTJzskUVbxIv81KVx2yT0.jpg');
+  background: url('your-background.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0;
-  height: 100vh;
-  color: white;
+  font-family: Arial, sans-serif;
 }
 
-
-/* Centered layout */
+/* Remove gray background from container */
 .profile-container {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.85); /* light translucent background */
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  background-color: transparent; /* or just remove this line */
+  padding: 20px;
+  border-radius: 15px;
 }
+
 
 /* Circular image */
 .profile-image {
