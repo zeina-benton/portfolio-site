@@ -42,3 +42,90 @@ a:hover {
   text-decoration: underline;
 }
 
+/* About Me section */
+.about-me {
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black */
+  padding: 30px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+/* Research section */
+.research {
+  margin: 60px auto;
+  max-width: 900px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.research-content {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black */
+  padding: 30px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+/* Extracurriculars section matching About Me box style */
+.extracurriculars {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.extracurriculars .about-content {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Resume section styling */
+.resume {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
