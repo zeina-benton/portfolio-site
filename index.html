@@ -60,17 +60,28 @@
       <p><a href="CV_2025.pdf" target="_blank" style="color: #00ffff; text-decoration: underline;">Download/View Resume (CV_2025.pdf)</a></p>
     </div>
   </div>
+
   <script>
-  const acc = document.getElementsByClassName("accordion");
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach(acc => {
+    acc.addEventListener("click", () => {
+      // Toggle 'active' class on the button itself
+      acc.classList.toggle("active");
+
+      // The next sibling element is the panel div
+      const panel = acc.nextElementSibling;
+
       if (panel.style.maxHeight) {
+        // Panel is open, close it
         panel.style.maxHeight = null;
+        panel.style.padding = "0 15px";
       } else {
+        // Panel is closed, open it
         panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.padding = "15px";
       }
     });
-  }
+  });
 </script>
+
