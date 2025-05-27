@@ -1,17 +1,15 @@
 /* Page background and font */
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url('galaxy.jpg'); /* Replace with your galaxy image file */
+  background-image: url('images/360_F_370356524_7x9V1bkGksKyTJzskUVbxIv81KVx2yT0.jpg');
   background-size: cover;
   background-position: center;
-  font-family: 'Times New Roman', serif;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
   height: 100vh;
+  color: white;
 }
+
 
 /* Centered layout */
 .profile-container {
